@@ -1,0 +1,1 @@
+Esta Carpeta estaran los componentes de presentacion de la pagina, generalmente las rutas y alguna pequeña funcion.
