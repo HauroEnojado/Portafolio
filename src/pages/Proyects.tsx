@@ -1,39 +1,47 @@
+import styled from 'styled-components'
+
+const ContainerProyects = styled.section`
+  display: flex;
+  flex-direction: row;
+
+  overflow: scroll;
+
+`
+
+const Proyect = () => {
+  return (
+    <article>
+      <h3>proyecto</h3>
+      <p>informacion del proyecto</p>
+      <img src='' alt='imagen del proyecto' />
+      <div>
+        <p>Logos y/o info extra</p>
+      </div>
+    </article>
+  )
+}
+
 const Proyects = () => {
   return (
     <div>
       <h2>Proyectos</h2>
-      <section>
-        <article>
-          <h3>Proyecto</h3>
-          <p>Info del proyecto</p>
-          <a href='#'>link al proyecto</a>
-          <div>extras</div>
-        </article>
-      </section>
-      <section>
-        <article>
-          <h3>Proyecto</h3>
-          <p>Info del proyecto</p>
-          <a href='#'>link al proyecto</a>
-          <div>extras</div>
-        </article>
-      </section>
-      <section>
-        <article>
-          <h3>Proyecto</h3>
-          <p>Info del proyecto</p>
-          <a href='#'>link al proyecto</a>
-          <div>extras</div>
-        </article>
-      </section>
-      <section>
-        <article>
-          <h3>Proyecto</h3>
-          <p>Info del proyecto</p>
-          <a href='#'>link al proyecto</a>
-          <div>extras</div>
-        </article>
-      </section>
+      <ContainerProyects>
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+        <Proyect />
+      </ContainerProyects>
     </div>
   )
 }

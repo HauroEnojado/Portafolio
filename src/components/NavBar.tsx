@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-const NavBar = ({ children }: React.PropsWithChildren) => {
+const NavBar = ({ children }: React.PropsWithChildren): React.ReactElement => {
   return (
     <header>
       {children}
