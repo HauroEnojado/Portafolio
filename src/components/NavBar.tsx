@@ -1,22 +1,21 @@
 import { NavLink } from 'react-router-dom'
 
-const NavBar = ({ children }: React.PropsWithChildren): React.ReactElement => {
+const NavBar = (): React.ReactElement => {
   return (
     <header>
-      {children}
       <nav>
         <ul>
           <li>
             <NavLink to='/'>Inicio</NavLink>
           </li>
           <li>
-            <NavLink to='/aboutme'>About Me</NavLink>
+            <NavLink to='/about'>Sobre mi</NavLink>
           </li>
           <li>
-            <NavLink to='/proyects'>Proyects</NavLink>
+            <NavLink to='/proyects'>Proyectos</NavLink>
           </li>
           <li>
-            <NavLink to='/contactme'>Contact Me</NavLink>
+            <NavLink to='/blog'></NavLink>
           </li>
         </ul>
       </nav>

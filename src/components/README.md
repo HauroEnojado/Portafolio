@@ -1,1 +1,0 @@
-En esta carpeta estaran los componentes que siempre estaran visibles en  [App.tsx](../App.tsx)
