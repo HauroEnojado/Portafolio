@@ -1,15 +1,14 @@
 module.exports = {
-  env: { browser: true, es2020: true },
-  extends: [
-    './node_modules/ts-standard/eslintrc.json',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended'
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': 'warn'
-  }
+  env: {
+    browser: true,
+    es2021: true
+  },
+  extends: ['standard', 'eslint:recommended', 'plugin:react/recommended'],
+  overrides: [],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  plugins: ['react'],
+  rules: { 'react/prop-types': ['off'] }
 }
