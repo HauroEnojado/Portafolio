@@ -8,36 +8,29 @@ import React from 'react'
 const Header = () => {
   return (
     <header className='flex flex-row justify-between w-full'>
-      <h1 className='flex-1 text-4xl m-auto font-bold hover:text-yellow-500'>
-        Victor Javier
-      </h1>
-      <nav className='flex flex-row flex-wrap justify-around items-center p-1'>
-        {/* esto solo servira para poner links a mis redes sociales
-        pensa utilizar algunos iconos que esten en blanco y cuando
-        pasen el puntero por arriba estos obtengan color */}
+      <div className='flex-1'>
+        <h1 className='text-3xl p-2 font-bold'>
+          Victor Javier<span className='text-[10px] italic'>HauroDev</span>
+        </h1>
+      </div>
+      <nav className='flex flex-row flex-wrap justify-around gap-5 items-center p-1'>
         <a
-          className='block m-2 hover:bg-white'
+          className='hover:scale-150 transform duration-200 m-2 hover:bg-white hover:rounded-sm'
           href='https://www.linkedin.com/in/victor-javier-taype'
-          target='_self'
-          rel='noopener noreferrer'
         >
-          <SiLinkedin className='hover:fill-blue-600 hover:scale-150 transform duration-200' />
+          <SiLinkedin className='hover:fill-blue-600' />
         </a>
         <a
-          className='block m-2  hover:bg-white'
+          className='hover:scale-150 hover:rounded-full transform -translate-y-[.25px] duration-200 m-2 hover:bg-white'
           href='https://www.linkedin.com/in/victor-javier-taype'
-          target='_self'
-          rel='noopener noreferrer'
         >
-          <SiGithub className='hover:fill-black hover:scale-150 transform duration-200' />
+          <SiGithub className='hover:fill-black' />
         </a>
         <a
-          className='block m-2 '
+          className='hover:scale-150 transform duration-200 m-2'
           href='https://www.instagram.com/haurodev/'
-          target='_self'
-          rel='noopener noreferrer'
         >
-          <SiInstagram className='hover:fill-[#E4405F] hover:scale-150 transform duration-200' />
+          <SiInstagram className='hover:fill-[#E4405F]' />
         </a>
       </nav>
     </header>
